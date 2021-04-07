@@ -1,5 +1,5 @@
 <?php
-namespace KirillK;
+namespace kormakov;
 class KirillExeption extends \RuntimeException
 {
 }

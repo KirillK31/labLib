@@ -1,6 +1,6 @@
 <?php
 
-namespace KirillK;
+namespace kormakov;
 
 use core\LogAbstract;
 use core\LogInterface;

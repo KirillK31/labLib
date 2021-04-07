@@ -1,6 +1,6 @@
 <?php
 
-namespace KirillK;
+namespace kormakov;
 
 
 use core\EquationInterface;
@@ -16,16 +16,13 @@ class Square extends Line implements EquationInterface
         MyLog::log("This is quadratic equation\n");
         MyLog::log('Roots: ');
         if ($D > 0) {
-            MyLog::log((-$b) + sqrt($D)) / (2 * $a);
-            MyLog::log((-$b) - sqrt($D)) / (2 * $a);
+            return $this->x = [(-$b - sqrt($D)) / (2 * $a), (-$b + sqrt($D)) / (2 * $a)];
         }
         if ($D == 0) {
-            MyLog::log(-($b / (2 * $a)));
+            return $this->x = [(-$b - sqrt($D) / (2 * $a))];
 
         }
-        if ($D < 0 ){
             throw new KirillExeption('The equation does not have solution');
-        }
     }
 
     protected function searchD($a, $b, $c)

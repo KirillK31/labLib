@@ -1,6 +1,6 @@
 <?php
 
-namespace KirillK;
+namespace kormakov;
 
 
 class Line
@@ -14,6 +14,6 @@ class Line
         }
         MyLog::log("This is linear equation\n");
         MyLog::log('Roots: ');
-        MyLog::log(-($b / $a));
+        return $this->X1 = [($b * -1) / $a];
     }
 }
