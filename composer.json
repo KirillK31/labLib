@@ -1,0 +1,15 @@
+{
+  "name": "vendor/lablib",
+  "type": "library",
+  "license": "MIT",
+  "description": "",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/rok9ru/trpo-core.git"
+    }
+  ],
+  "require": {
+    "rok9ru/trpo-core": "^2.0"
+  }
+}
