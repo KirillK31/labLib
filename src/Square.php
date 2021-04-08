@@ -2,7 +2,6 @@
 
 namespace kormakov;
 
-
 use core\EquationInterface;
 
 class Square extends Line implements EquationInterface
@@ -13,8 +12,6 @@ class Square extends Line implements EquationInterface
             return parent::line($b, $c);
         }
         $D = $this->searchD($a, $b, $c);
-        MyLog::log("This is quadratic equation\n");
-        MyLog::log('Roots: ');
         if ($D > 0) {
             return $this->x = [(-$b - sqrt($D)) / (2 * $a), (-$b + sqrt($D)) / (2 * $a)];
         }
